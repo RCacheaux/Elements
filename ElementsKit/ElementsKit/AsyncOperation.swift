@@ -1,8 +1,14 @@
 import Foundation
 
-public class AsyncOperation: NSOperation {
+public class AsyncOperation<T>: NSOperation {
   private var _executing = false
   private var _finished = false
+  private let onComplete: Outcome<T> -> Void
+
+  init(onComplete: Outcome<T> -> Void) {
+    self.onComplete = onComplete
+    super.init()
+  }
 
   override private(set) public var executing: Bool {
     get {
@@ -51,8 +57,8 @@ public class AsyncOperation: NSOperation {
     finished = true
   }
 
-  public func finishedExecutingOperationWithOutcome<T>(outcome: Outcome<T>, onComplete: (Outcome<T> -> Void)?) {
+  public func finishedExecutingOperationWithOutcome(outcome: Outcome<T>) {
     finishedExecutingOperation()
-    onComplete?(outcome)
+    onComplete(outcome)
   }
 }
