@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9FEBD8B91C62F873001F1C56"
-               BuildableName = "Elements.framework"
-               BlueprintName = "Elements"
-               ReferencedContainer = "container:Elements.xcodeproj">
+               BuildableName = "ElementsKit.framework"
+               BlueprintName = "ElementsKit"
+               ReferencedContainer = "container:ElementsKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9FEBD8B91C62F873001F1C56"
-            BuildableName = "Elements.framework"
-            BlueprintName = "Elements"
-            ReferencedContainer = "container:Elements.xcodeproj">
+            BuildableName = "ElementsKit.framework"
+            BlueprintName = "ElementsKit"
+            ReferencedContainer = "container:ElementsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9FEBD8B91C62F873001F1C56"
-            BuildableName = "Elements.framework"
-            BlueprintName = "Elements"
-            ReferencedContainer = "container:Elements.xcodeproj">
+            BuildableName = "ElementsKit.framework"
+            BlueprintName = "ElementsKit"
+            ReferencedContainer = "container:ElementsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
