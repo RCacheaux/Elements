@@ -5,7 +5,7 @@ public class AsyncOperation<T>: NSOperation {
   private var _finished = false
   private let onComplete: Outcome<T> -> Void
 
-  init(onComplete: Outcome<T> -> Void) {
+  public init(onComplete: Outcome<T> -> Void) {
     self.onComplete = onComplete
     super.init()
   }
