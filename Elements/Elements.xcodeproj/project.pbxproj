@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		9FEBD8BE1C62F873001F1C56 /* Elements.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEBD8BD1C62F873001F1C56 /* Elements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FEBD8C61C62F9A3001F1C56 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEBD8C51C62F9A3001F1C56 /* Outcome.swift */; };
+		9FEBD8C81C62F9BE001F1C56 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEBD8C71C62F9BE001F1C56 /* AsyncOperation.swift */; };
+		9FEBD8CA1C62F9D4001F1C56 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEBD8C91C62F9D4001F1C56 /* Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9FEBD8BA1C62F873001F1C56 /* Elements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEBD8BD1C62F873001F1C56 /* Elements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
 		9FEBD8BF1C62F873001F1C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FEBD8C51C62F9A3001F1C56 /* Outcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		9FEBD8C71C62F9BE001F1C56 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		9FEBD8C91C62F9D4001F1C56 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				9FEBD8BD1C62F873001F1C56 /* Elements.h */,
 				9FEBD8BF1C62F873001F1C56 /* Info.plist */,
+				9FEBD8C51C62F9A3001F1C56 /* Outcome.swift */,
+				9FEBD8C91C62F9D4001F1C56 /* Action.swift */,
+				9FEBD8C71C62F9BE001F1C56 /* AsyncOperation.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -130,6 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEBD8C81C62F9BE001F1C56 /* AsyncOperation.swift in Sources */,
+				9FEBD8CA1C62F9D4001F1C56 /* Action.swift in Sources */,
+				9FEBD8C61C62F9A3001F1C56 /* Outcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +240,7 @@
 		9FEBD8C31C62F873001F1C56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +251,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcacheaux.Elements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9FEBD8C41C62F873001F1C56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
